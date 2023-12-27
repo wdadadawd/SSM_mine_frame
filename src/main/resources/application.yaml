@@ -1,0 +1,12 @@
+spring:
+  scan-location:                     #扫描地址
+    filter-location: com.lsu.test    #filter扫描路径
+    bean-location: com.lsu.test      #bean扫描路径
+  datasource: #数据库配置
+    url: jdbc:mysql://localhost:3306/spring_test?&serverTimezone=GMT%2B8&characterEncoding=utf-8&useSSL=false
+    username: root
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource                        #连接池
+    driver-class-name: com.mysql.cj.jdbc.Driver       #8.0数据库
+  static: #静态资源配置
+    url: "/static"               #静态资源存放路径
